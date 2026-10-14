@@ -1,0 +1,22 @@
+# Site settings. After editing this file, restart `jekyll serve` to see changes.
+title: My Blog
+description: Notes, projects, and things I'm learning.
+author: JMu
+
+# The repo is served from https://<username>.github.io/Portfolio-Blog/,
+# so every link needs this prefix. GitHub Pages fills in `url` automatically.
+baseurl: "/Portfolio-Blog"
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
+
+exclude:
+  - README.md
+  - new-post.sh
+  - Gemfile
+  - Gemfile.lock
+  - vendor
