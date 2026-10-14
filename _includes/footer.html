@@ -1,0 +1,15 @@
+{%- comment -%}
+  Replaces minima's default footer. The year updates on every build, and the
+  GitHub link comes from GitHub Pages, so it shows on the live site.
+{%- endcomment -%}
+<footer class="site-footer">
+  <div class="wrapper">
+    <p class="footer-line">
+      &copy; {{ site.time | date: "%Y" }} {{ site.author | escape }}
+      {%- if site.github.owner_url %}
+      &middot; <a href="{{ site.github.owner_url }}">GitHub</a>
+      {%- endif %}
+      &middot; <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+    </p>
+  </div>
+</footer>
