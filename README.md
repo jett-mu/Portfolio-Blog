@@ -1,6 +1,6 @@
 # Portfolio-Blog
 
-A Jekyll blog published with GitHub Pages at `https://<username>.github.io/Portfolio-Blog/`.
+A Jekyll blog published with GitHub Pages at <https://blog.jettm.dev/>.
 
 ## Write a post
 
@@ -37,7 +37,7 @@ Drop the file into `assets/images/<post-name>/` and embed it:
 ![Description]({{ "/assets/images/my-post-title/photo.jpg" | relative_url }})
 ```
 
-Keep the `relative_url` part. It adds the `/Portfolio-Blog` prefix so the image loads on GitHub Pages.
+Keep the `relative_url` part. It adds the site's `baseurl` so the image path stays correct if the site ever moves.
 
 ## Drafts
 
@@ -54,4 +54,4 @@ bundle install
 bundle exec jekyll serve --livereload --drafts
 ```
 
-Then open <http://localhost:4000/Portfolio-Blog/>.
+Then open <http://localhost:4000/>.

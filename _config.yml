@@ -3,9 +3,9 @@ title: My Blog
 description: Notes, projects, and things I'm learning.
 author: JMu
 
-# The repo is served from https://<username>.github.io/Portfolio-Blog/,
-# so every link needs this prefix. GitHub Pages fills in `url` automatically.
-baseurl: "/Portfolio-Blog"
+# Served from the custom domain in CNAME (site root), so no path prefix.
+url: "https://blog.jettm.dev"
+baseurl: ""
 
 theme: minima
 plugins:
